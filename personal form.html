@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <form> How well do you know me?
+      <ol>
+        <li>
+          <label> When is my birthday? </label> <br>
+          <input type = "date"> </input>
+        <li>
+
+        <li class="favcolor">
+          <label> What is my favorite color? </label> <br>
+          <input type = "radio" name="color"> Pink </input> <br>
+          <input type = "radio" name = "color"> Silver </input> <br>
+          <input type = "radio" name = "color"> Blue </input> <br>
+          <input type = "radio" name = "color"> Purple </input> <br>
+        </li>
+
+        <li>
+          <label> What is my favorite number? </label> <br>
+          <input type = "checkbox" name="number"> 2 </input> <br>
+          <input type = "checkbox" name="number"> 9 </input> <br>
+          <input type = "checkbox" name="number"> 8 </input> <br>
+          <input type = "checkbox" name="number"> 4 </input> <br>
+        </li>
+
+        <li>
+          <label> How old am I? </label>
+          <input type = "number" id = "age"> </input>
+        </li>
+
+        <li>
+          <label> What is my house number?</label>
+          <input type = "home number" type = "number"> </input>
+        </li>
+
+        <li>
+          <label> What city do I live in? </label>
+          <input> </input>
+        </li>
+
+        <button onclick = "rightOrWrongs()"> Sibmit </button>
+
+      </ol>
+    </form>
+
+    <script>
+        var color = docment.getElementsByName("color");
+        function rightOrWrong(){
+          document.write("You got my favorite color right!")
+        }
+        else {
+          document.write("You got my favorite color wrong!");
+        }
